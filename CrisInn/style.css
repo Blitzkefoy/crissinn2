@@ -1,0 +1,161 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #00539C;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #1c77c3;
+    border-radius: 4px;
+}
+
+/* Home Section */
+.hero {
+    padding: 60px 20px;
+    text-align: left;
+    background-image: url('crispic.jpg');
+    background-size: cover;
+    color: white;
+    min-height: 70vh;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Rooms Section */
+.room-section {
+    padding: 50px 20px;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.room {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 20px;
+}
+
+.room img {
+    width: 100%;
+    height: auto;
+}
+
+.room h2 {
+    font-size: 1.5rem;
+    color: #00539C;
+    margin: 10px 0;
+}
+
+.room p {
+    margin: 5px 0;
+}
+
+/* Reservation Form */
+.reservation-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reservation-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.reservation-form input, .reservation-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservation-form input[type="submit"] {
+    background-color: #00539C;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.reservation-form input[type="submit"]:hover {
+    background-color: #1c77c3;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.contact-section p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #00539C;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
